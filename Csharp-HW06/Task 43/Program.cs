@@ -9,6 +9,10 @@ Console.WriteLine("Введите b2");
 double b2 = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Введите k2");
 double k2 = Convert.ToDouble(Console.ReadLine());
+if(k1==k2 && b1==b2) Console.WriteLine("Прямые совпадают, введите новые значения");
+else if(k1==k2) Console.WriteLine("Прямые паралленьны");
+else
+{
 double x=(b2-b1)/(k1-k2);
 double y=k1*x+b1;
-Console.WriteLine($"Точка пересечения ({Math.Round(x,2)};{Math.Round(y,2)})");
+Console.WriteLine($"Точка пересечения ({Math.Round(x,2)};{Math.Round(y,2)})");}
